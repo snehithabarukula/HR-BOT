@@ -9,21 +9,31 @@
 
 # Technologies Used 
 1) Front-end: HR BOT web pages are built using html,css,javascript. 
-2) Back-end : Database is the heart of the technology platform, where all of the main data related to the website are stored. The Primary database is used to collect the details from the web pages and it's responsible for the data that are shown on UI (front-end). We used Mysql database software.
+2) Back-end : AWS, MySQL
+ - Database is the heart of the technology platform, where all of the main data related to the website are stored. The Primary database is used to collect the details from the web pages and it's responsible for the data that are shown on UI (front-end). We used Mysql database software.
 
 # System Requirements
 1) The system should have Jupyter Notebook or Google Colab to run the ML model. 
-2)The required python packages are as follows, (here I have only mentioned the packages that I have used for the developments)
+2) The required python packages are as follows, (here I have only mentioned the packages that I have used for the developments)
 
+
+      tensorflow==2.3.1
+      nltk==3.5
+      colorama==0.4.3
+      numpy==1.18.5
+      scikit_learn==0.23.2
+      Flask==1.1.2
+      PyMySQL==1.0.2
+      docutils==0.19
 
 # Set Up
 you’ll need to know how to setup the following to run the project:
 
-- Set up a virtual environment
-- Install Django
+- Set up a anaconda 
+- Install Jupyter Notebook
 - Pin your project dependencies
-- Set up a Django project
-- Start a Django app
+- Set up Mysql 
+- Start app.py 
 
 
 ## Installing Python 
@@ -66,38 +76,27 @@ The Windows installer incorporates pip3 (the Python package manager) by default.
     
 
 ## Project Set Up 
-1) The system should have a python setup before setting up django. Installing a latest version of python ide is must.
+1) The system should have a python and anaconda setup if you are using Jupyter Notebook.
+2) In the next step you need to install a visual code studio or any ide that supports web development languages. 
+3) Set up the database usibg MySQL workbench. 
+4) Run the HTML pages to see how the bot works.
 
-3) In the next step you need to install a virtualwrapper which is a virtual environment specifically to run this project. 
-In cmd create: 
-
-
-       pip install virtualenwrapper -win
-       
-Once you've created a virtual environment, and called workon to enter it, you can use pip3 to install Django :
-  
-  
-  
-       pip3 install django~=3.1
-  
-
-4) Create the virtual environment:
-  
-  
-       mkvirtualenv environment_name
-       
-6) Install Django :
-  
-  
-       pip install django
-       
-8) mkdir projects -> cd projects -> django-admin startproject projectname (Here projects is the name of the folder I created on my desktop)
-9) To run  the server :
-  
-  
-       python manage.py runserver
-       
-       
+           
 ## Project Flow 
 The chatbot involves two logical entities - The frontend and the Backend. The frontend involves a series of HTML and CSS web pages that displays products and basic design of the website. The backend involves the ML Model and a database management system software where all the responses of the document is stored. A word doc is created using python docs using the requirements filled using the webpages. 
+
+### Defining Intents
+A set of simple intents and bunch of messages that corresponds to those intents are created and also mapped to some responses according to each intent category. 
+
+### Integrating with web application
+Once, you train the model, you can integrate your trained chatbot model with any other chat application in order to make it more effective to deal with real world users using flask. we have already developed an application using flask and integrated this trained chatbot model with that application.
+
+## Future Implementations
+1) Use more data to train: The training dataset can be expanded. A robust chatbot solution may be created with a sizable dataset and a lot of different intents.
+Apply different NLP techniques: In order to expand the functionalities of the chatbot, one  may incorporate more NLP solutions like NER (Named Entity Recognition). If the chatbot also has a NER model, you can quickly identify any entity that appears in user chat messages and use it in subsequent chats. Additionally, you may use a sentiment analysis model to detect various emotional undertones in user communications, which will precisely bring some extra hues to your chatbot.
+Try different neural network architectures: Additionally, I want to experiment with various hyperparameters and different neural network topologies.
+Add emojis: One can consider to add emojis while building the models.
+
+
+
 
