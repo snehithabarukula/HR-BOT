@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+<link rel="stylesheet" href=
+"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+ 
+
+    <link rel="stylesheet" href=
+"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  <head>
+    <title>HR WAVELABS BOT </title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet"  href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" />  
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <style>
+      html, body {
+      min-height: 100%;
+      background: linear-gradient(to bottom, #030303 20%, #106abe 100%);
+      /*background: linear-gradient(to bottom, #4454e0 50%, #2891d6 100%);*/
+      }
+      body, div, form, input, select { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: black;
+      line-height: 22px;
+      }
+      
+      h1{
+        text-align: center;
+        color: crimson;
+      }
+      
+      h4 {
+      margin: 15px 0 4px;
+      font-weight: 400;
+      }
+      h4 {
+      margin: 20px 0 4px;
+      font-weight: 400;
+      }
+      span {
+      color: red;
+      }
+      .small {
+      font-size: 10px;
+      line-height: 18px;
+      }
+      .testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+      padding: 120px;
+      
+      }
+      form {
+      width: 100%;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0px 0px 20px 20px rgb(218, 66, 28);
+      }
+      input {
+      width: calc(100% - 10px);
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      vertical-align: middle;
+      }
+      input:hover, textarea:hover, select:hover {
+      outline: none;
+      border: 1px solid #095484;
+      background: #e6eef7;
+      }
+      .title-block select, .title-block input {
+      margin-bottom: 10px;
+      }
+      select {
+      padding: 7px 0px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      background: transparent;
+      }
+      select, table {
+      width: 100%;
+      }
+      option {
+      background: #fff;
+      }   
+
+      .day-visited, .time-visited {
+      position: relative;
+      }
+      input[type="date"]::-webkit-inner-spin-button {
+      display: none;
+      }
+      input[type="time"]::-webkit-inner-spin-button {
+      margin: 2px 22px 0 0;
+      }
+      .day-visited i, .time-visited i, input[type="date"]::-webkit-calendar-picker-indicator {
+      position: absolute;
+      top: 8px;
+      font-size: 20px;
+      }
+      .day-visited i, .time-visited i {
+      right: 5px;
+      z-index: 1;
+      color: #a9a9a9;
+      }
+      
+      [type="date"]::-webkit-calendar-picker-indicator {
+      right: 0;
+      z-index: 2;
+      opacity: 0;
+      }
+      .question-answer label {
+      display: block;
+      padding: 0 20px 10px 0;
+      }
+      .question-answer input {
+      width: auto;
+      margin-top: -2px;
+      }
+      th, td {
+      width: 18%;
+      padding: 15px 0;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+      vertical-align: unset;
+      line-height: 18px;
+      font-weight: 400;
+      word-break: break-all;
+      }
+      .first-col {
+      width: 25%;
+      text-align: left;
+      }
+      textarea {
+      width: calc(100% - 6px);
+      }
+      .btn-block {
+      margin-top: 20px;
+      text-align: center;
+      }
+      input[type="submit"] {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      -webkit-border-radius: 5px; 
+      -moz-border-radius: 5px; 
+      border-radius: 5px; 
+      background-color: rgb(218, 66, 28);
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+      button:hover {
+      background-color: rgb(218, 66, 28);
+      }
+      @media (min-width: 568px) {
+      .title-block {
+      display: flex;
+      justify-content: space-between;
+      }
+      .title-block select {
+      width: 30%;
+      margin-bottom: 0;
+      }
+      .title-block input {
+      width: 31%;
+      margin-bottom: 0;
+      }
+      th, td {
+      word-break: keep-all;
+      }
+      .des_1,.des_2
+     {
+      display: none;
+     }
+     [type="checkbox"]
+    {
+        vertical-align: right;
+    
+            position: relative;
+            bottom: 1px;
+    }
+    label {
+        padding-left: 15px;
+  text-indent: -15px;
+    }
+    input[type=checkbox]{width: 13px;
+  height: 13px;
+  padding: 0;
+  margin:0;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  *overflow: hidden;}
+  #ex1 input,#e2 input , #ex3 input ,#ex4 input ,#ex5 input,#ex6 input  {
+  float: left;
+  }
+
+#ex1 label,#ex2 label,#ex3 label, #ex4 label,#ex5 label,#ex6 label{
+    width: 100%;
+  display: block;
+  float: left;
+  margin-left: 10px; 
+}
+
+label {
+    font-weight: normal !important;
+}
+ }
+      
+    </style>
+  </head>
+  <body>
+<div class="testbox">
+<form method="post" autocomplete="off" action="{{url_for('database')}}" id="">
+    <div class="des_1">
+      <input type="text" name="JobID" value="{{JobID}}">
+      <input type="text" name="Role" value="{{Role}}">
+      <input type="text" name="Practice" value="{{Practice}}">
+
+
+    </div>
+    <h4>Years of Experience<span>*</span></h4>
+    <div class="title-block"> 
+    <input type="textbox" name="exp",class="exp" id="exp">
+    </div>
+    <h4>Job Location<span>*</span></h4>
+    <div class="title-block">
+      <select name="location">
+        <option selected hidden value="title" selected>select job location</option>
+        {% for loc in location %}
+          <option value="{{loc}}">{{loc}}</option>
+        {% endfor %}
+      </select>
+    </div>
+      <h4>Job Type<span>*</span></h4>
+      <div class="title-block">
+        <select name="JobType">
+          <option selected hidden value="title" selected>select job type</option>
+          {% for type in JobType %}
+          <option value="{{type}}">{{type}}</option>
+        {% endfor %}
+          
+        </select>
+      </div>
+      <h4>Job Description<span>*</span></h4>
+      <div id="wrapper"> 
+        <textarea rows="5" type="text" name="des">{{Description[Role]}} </textarea>
+      </div>  
+      <script src="http://code.jquery.com/jquery-latest.js"></script>
+     
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+      <script type="text/javascript" src="{{url_for('static', filename='js/checkall.js')}}">   </script>  
+      <script type="text/javascript" src="{{url_for('static', filename='js/checkall2.js')}}">   </script>  
+      <h4>Mandatory Skills<span>*</span></h4>   
+      <!-- <textarea class="textfield" id="video0_tags" name="video0_tags"></textarea>      -->
+    <div class="taglist">
+        {% for i in data[Role] %}
+        <input type="checkbox" name="skills" value="{{i}}"> <label> {{i}} </label> <br/>
+        {% endfor %}
+        <input type="checkbox" name="checkall" id="checkall" > <label> Select All </label>
+    </div>
+    
+      
+
+    <h4>Nice to Have Skills<span>*</span></h4>        
+    <div >
+        {% for i in data2[Role] %}
+        <input type="checkbox" name="skills2" value="{{i}}"> {{i}} <br/>
+        {% endfor %}
+        <input type="checkbox" name="checkall2" id="checkall2" > <label> Select All </label>
+        
+
+    </div>
+    <h4>Why Wavelabs<span>*</span></h4>
+        <div>
+         <textarea rows=17 type='text' name="selprograms2" id="selectedtext3" placeholder="Selected Checkboxes"> An AI first company – we are an AI first company and help our clients to build products using the latest technologies like ML, DL (CV, NLP) and MLOps 
+
+We built an end-to-end AI framework to help our clients to accelerate their journey to launch models (https://insight.wavelabs.ai) 
+
+We joined the Nvidia Partner Network as a Professional Services partner focused on building solutions powered by Nvidia GPU and software ecosystem (https://www.wavelabs.ai/news_and_updates/wavelabs-technologies-joins-nvidia-partner-network/) 
+
+We work closely with academic experts and research groups to solve some of the niche problems in medical imaging, biopharma, life sciences, law firms, retail and agriculture 
+
+Work environment – we have an environment to create an impact on the client business and transform innovative ideas into reality. Even our junior engineers get the opportunity to work on different product features in complex domains 
+
+Open communication, flat hierarchy, plenty of individual responsibility 
+</textarea>
+        </div>
+        <h4>Find Us<span>*</span></h4>
+        <div>
+        <textarea name="findus" rows="6">Plot No 7,Jubilee Enclave
+Opp.Hitex Entrance
+Hitech City,Hyderabad 500081
+Email: info@wavelabs.ai</textarea>
+    
+
+        </div>
+
+
+
+
+
+
+
+    <div class="btn-block">
+        <input type="submit" value="Submit" name="submit">
+       
+    </div>
+      
+  
+  </form>
+</div>
+    
+</body>
+</html>
