@@ -93,8 +93,8 @@ Once, you train the model, you can integrate your trained chatbot model with any
 
 ## Future Implementations
 1) Use more data to train: The training dataset can be expanded. A robust chatbot solution may be created with a sizable dataset and a lot of different intents.
-Apply different NLP techniques: In order to expand the functionalities of the chatbot, one  may incorporate more NLP solutions like NER (Named Entity Recognition). If the chatbot also has a NER model, you can quickly identify any entity that appears in user chat messages and use it in subsequent chats. Additionally, you may use a sentiment analysis model to detect various emotional undertones in user communications, which will precisely bring some extra hues to your chatbot.
-Try different neural network architectures: Additionally, I want to experiment with various hyperparameters and different neural network topologies.
+2) Apply different NLP techniques: In order to expand the functionalities of the chatbot, one  may incorporate more NLP solutions like NER (Named Entity Recognition). If the chatbot also has a NER model, you can quickly identify any entity that appears in user chat messages and use it in subsequent chats. Additionally, you may use a sentiment analysis model to detect various emotional undertones in user communications, which will precisely bring some extra hues to your chatbot.
+3) Try different neural network architectures: Additionally, I want to experiment with various hyperparameters and different neural network topologies.
 Add emojis: One can consider to add emojis while building the models.
 
 
