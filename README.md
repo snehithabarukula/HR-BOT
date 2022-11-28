@@ -1,6 +1,6 @@
 # HR-BOT
 # Introduction 
- Worked with a team of four at wavelabs technologies, to build a rule-based chatbot for the HR team using Convolution Neural Network and databases. 
+Worked with a team of four to build a rule-based chatbot for the HR team to create job descriptions automatically using python docs. The chatbot involves two logical entities - The frontend and the Backend. The frontend involves a series of HTML and CSS web pages that displays products and basic design of the website. The backend involves the ML Model (NLP, CNN) and a database management system software where all the responses of the document are stored. 
 # Table of Contents
 1) Technologies Used
 2) System Requirements
